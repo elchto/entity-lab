@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ENTITY LAB — Dead by Daylight Intelligence System</title>
+<meta name="description" content="Platform intelijen Dead by Daylight: killer, survivor, perk, add-on, build lab, map, match analyzer, dan meta research. Data terverifikasi dari wiki resmi.">
+<meta name="theme-color" content="#0a0a0c">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ENTITY LAB">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/favicon-32.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="atmos" aria-hidden="true"></div>
+<button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <img src="icons/icon-192.png" alt="" width="36" height="36">
+    <div>
+      <strong>ENTITY LAB</strong>
+      <span>DBD Intelligence</span>
+    </div>
+  </div>
+  <nav id="nav" aria-label="Navigasi utama"></nav>
+  <div class="side-foot">
+    <div id="dbMeta" class="muted small"></div>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<main class="shell">
+  <header class="topbar">
+    <div class="search-wrap">
+      <input id="globalSearch" type="search" placeholder="Cari killer, survivor, perk, add-on, map…" autocomplete="off" enterkeyhint="search">
+      <div id="searchSuggest" class="suggest" hidden></div>
+    </div>
+    <button id="btnExport" class="ghost" title="Backup data lokal">Backup</button>
+  </header>
+  <div id="view" class="view" tabindex="-1"></div>
+</main>
+<input type="file" id="importFile" accept="application/json" hidden>
+<script src="app.js" defer></script>
+</body>
+</html>

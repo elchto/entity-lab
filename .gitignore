@@ -1,0 +1,8 @@
+tools/*.json
+tools/*.lua
+tools/*.html
+tools/perk_html/
+tools/redir_*.json
+tools/perk_extract_*.json
+__pycache__/
+.DS_Store
